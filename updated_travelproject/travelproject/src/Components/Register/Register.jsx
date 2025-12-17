@@ -4,7 +4,7 @@ import axios from "axios";
 import { FaUser, FaLock, FaEnvelope } from "react-icons/fa";
 import Video1 from "../../Assets/Video1.mp4";
 import { Link, useNavigate } from "react-router-dom";
-import "./register.scss"; // Make sure to import the SCSS file
+import "./Register.scss"; // Make sure to import the SCSS file
 
 const Register = () => {
   const [name, setName] = useState("");

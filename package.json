@@ -9,6 +9,7 @@
     "sequelize": "^6.37.6"
   },
   "devDependencies": {
+    "sass": "^1.97.0",
     "sass-embedded": "^1.85.1"
   }
 }
