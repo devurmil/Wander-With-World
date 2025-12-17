@@ -24,7 +24,7 @@ const Home = () => {
     return (
       <div className="Home">
         <div className="videoBg">
-          <video src={Video1} autoPlay loop muted></video>
+          <img src={Video1}></img>
         </div>
 
         <div className="SectionText">
