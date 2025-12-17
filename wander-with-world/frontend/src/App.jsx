@@ -8,7 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import Middle from "./Components/Middle/Middle";
 import Navbar from "./Components/Navbar/Navbar";
-import Portifolio from "./Components/Portifolio/Portifolio"; // About Us
+import Portfolio from "./Components/Portfolio/Portfolio"; // About Us
 import Questions from "./Components/Questions/Questions";
 import Reviews from "./Components/Reviews/Reviews"; // Testimonial
 import Subscribe from "./Components/Subscribe/Subscribe"; // Gallery
@@ -79,7 +79,7 @@ function App() {
           {/* Define application routes */}
           <Route path="/" element={<Home />} />
           <Route path="/destinations" element={<Destinations />} />
-          <Route path="/about-us" element={<Portifolio />} />
+          <Route path="/about-us" element={<Portfolio />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/portfolio" element={<Subscribe />} />
           <Route path="/signup" element={<SignUp />} />
@@ -100,7 +100,7 @@ function App() {
           <>
             <Middle />
             <Destinations />
-            <Portifolio />
+            <Portfolio />
             <Reviews />
             <Questions />
             <Subscribe />
