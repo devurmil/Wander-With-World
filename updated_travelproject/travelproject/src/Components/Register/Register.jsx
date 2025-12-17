@@ -60,7 +60,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/auth/register",
+        "/api/auth/register",
         { name, email, password }
       );
       localStorage.setItem("token", response.data.token);
@@ -83,7 +83,7 @@ const Register = () => {
   const handleGoogleSignup = async (credentialResponse) => {
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/auth/google",
+        "/api/auth/google",
         {
           token: credentialResponse.credential,
         }

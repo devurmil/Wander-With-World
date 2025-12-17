@@ -26,7 +26,7 @@ const SignUp = () => {
     setError("");
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/auth/signup",
+        "/api/auth/signup",
         { email, password }
       );
       localStorage.setItem("token", response.data.token);
@@ -47,7 +47,7 @@ const SignUp = () => {
   const handleGoogleLogin = async (credentialResponse) => {
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/auth/google",
+        "/api/auth/google",
         {
           token: credentialResponse.credential, // This matches backend parameter name
         }
