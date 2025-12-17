@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './Home.css';
-import Video1 from '../../Assets/Video1.mp4';
+import Video1 from '../../Assets/bg.jpg';
 import image16 from '../../Assets/image16.jpeg';
 import image17 from '../../Assets/image17.jpeg';
 import image18 from '../../Assets/image18.jpeg';
