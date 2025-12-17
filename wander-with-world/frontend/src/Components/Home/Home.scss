@@ -32,80 +32,72 @@
     align-items: center;
     overflow: hidden;
 
-    /* Background styling */
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url("path-to-image-or-video.jpg") center/cover no-repeat;
-        filter: brightness(0.7); /* Darkens background for better contrast */
-        z-index: -1;
-    }
+    /* Background styling - video is handled in JSX */
 }
+
 // Media queries
-@media screen and (min-width: 480px){
-    .Home{
-        .SectionText{
+@media screen and (min-width: 480px) {
+    .Home {
+        .SectionText {
             padding: e 2rem;
             justify-content: center;
             text-align: center;
             width: 100%;
-           
-            h1{
+
+            h1 {
 
                 font-size: var(--biggestFontSize);
                 font-weight: 900;
             }
 
-             p{
-                    padding: 1rem 0;
-                    font-size: var(--h2FontSize);
-                    max-width: 70%;
-                    margin: auto;
+            p {
+                padding: 1rem 0;
+                font-size: var(--h2FontSize);
+                max-width: 70%;
+                margin: auto;
 
-            .btn{
-                
+                .btn {
+
                     font-size: var(--h3FontSize);
                     margin: auto;
-            }         
+                }
 
+            }
         }
     }
-}
 }
 
 @media screen and (min-width:769px) {
-    Home{
-     .sectionText {
-        width: 100%;
+    Home {
+        .sectionText {
+            width: 100%;
 
-        h1{
+            h1 {
 
-            font-size: 4rem;
-            font-weight: 900;
-            max-width: 70%;
-            margin: auto;
-        }
-        p{
-            padding: 1rem 0;
-            font-size: var(--h2FontSize);
-            max-width: 70%;
-            margin: auto;
+                font-size: 4rem;
+                font-weight: 900;
+                max-width: 70%;
+                margin: auto;
+            }
+
+            p {
+                padding: 1rem 0;
+                font-size: var(--h2FontSize);
+                max-width: 70%;
+                margin: auto;
+
+            }
+
+            .btn {
+                gap: 0.5rem;
+                padding-right: 2rem;
+                padding-left: 2rem;
+                font-size: var(--h3FontSize);
+                margin: auto;
+            }
 
         }
-        .btn {
-            gap: 0.5rem;
-            padding-right: 2rem;
-            padding-left: 2rem;
-            font-size: var(--h3FontSize);
-            margin: auto;
-        }
-    
-    }
-   
+
     }
 
 }
@@ -121,10 +113,12 @@
     z-index: 1;
 
     h1 {
-        font-size: 3rem; /* Adjust size for responsiveness */
+        font-size: 3rem;
+        /* Adjust size for responsiveness */
         font-weight: 900;
         margin-bottom: 1rem;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for contrast */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        /* Text shadow for contrast */
     }
 
     p {
@@ -188,34 +182,35 @@
 // Media queries
 @media screen and (min-width: 480px) {
     .Home {
-      .SectionText {
-        padding: 0 2rem;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-  
-        h1 {
-          font-size: var(--biggestFontSize);
-          font-weight: 900;
+        .SectionText {
+            padding: 0 2rem;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+
+            h1 {
+                font-size: var(--biggestFontSize);
+                font-weight: 900;
+            }
+
+            p {
+                padding: 1rem 0;
+                font-size: var(--h2FontSize);
+                max-width: 70%;
+                margin: auto;
+            }
+
+            .btn {
+                font-size: var(--h3FontSize);
+                margin: auto;
+            }
         }
-  
-        p {
-          padding: 1rem 0;
-          font-size: var(--h2FontSize);
-          max-width: 70%;
-          margin: auto;
+
+        .popularPlaces {
+            width: 100%;
         }
-  
-        .btn {
-          font-size: var(--h3FontSize);
-          margin: auto;
-        }
-      }
-      .popularPlaces {
-          width: 100%;
-      }
     }
-  }
+}
 
 @media screen and (min-width: 769px) {
     .Home {
@@ -262,11 +257,12 @@
             padding: 0 2rem;
         }
 
-        h3{
+        h3 {
             color: var(--whiteColor);
             padding: 1rem 0;
             position: relative;
-            &::after{
+
+            &::after {
                 content: '';
                 width: 83%;
                 height: 2px;
